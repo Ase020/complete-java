@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Arrays {
     public static void main(String[] args){
         int[] nums = {12,34,67,98};
@@ -31,5 +33,9 @@ public class Arrays {
 //            System.out.println();
         }
 
+    }
+
+    public static List<Integer> asList(int i, int i1, int i2, int i3) {
+        return null;
     }
 }
