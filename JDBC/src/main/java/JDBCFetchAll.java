@@ -8,7 +8,7 @@ public class JDBCFetchAll {
         String url = "jdbc:mysql://localhost:3306/world";
         String username = "root";
         String password = "root";
-        String query = "SELECT * FROM country";
+        String query = "SELECT * FROM users";
 
 
         Class.forName("com.mysql.cj.jdbc.Driver");
@@ -26,7 +26,7 @@ public class JDBCFetchAll {
            countryCodeName = countryCode + " : " + countryName;
            System.out.println(countryCodeName);
        }
-        
+
 
         statement.close();
         connection.close();
