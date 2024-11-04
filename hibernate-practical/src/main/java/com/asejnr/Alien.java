@@ -7,9 +7,7 @@ import jakarta.persistence.*;
 public class Alien {
     @Id
     private int aid;
-    @Column(name = "alien_name")
-    private String name;
-    @Column(name = "alien_color")
+    private AlienName name;
     private String color;
     @Transient
     private  int age;
@@ -40,13 +38,7 @@ public class Alien {
         this.aid = aid;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getColor() {
         return color;

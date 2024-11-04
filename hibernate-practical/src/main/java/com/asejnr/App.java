@@ -24,10 +24,10 @@ public class App
         SessionFactory sessionFactory = config.buildSessionFactory(serviceRegistry);
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-//        session.persist(alien);
+        session.persist(alien);
 
         // fetching data from db
-        alien = (Alien) session.get(Alien.class, 102);
+//        alien = (Alien) session.get(Alien.class, 102);
         transaction.commit();
 
         System.out.println(alien);
