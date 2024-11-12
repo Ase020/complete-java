@@ -1,9 +1,18 @@
 package com.asejnr.springmvcboot.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Alien {
+    @Id
     private int id;
     private String name;
     private int age;
+
+    public Alien() {
+
+    }
 
     public int getId() {
         return id;
@@ -26,6 +35,12 @@ public class Alien {
     }
 
     public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Alien(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
         this.age = age;
     }
 

@@ -15,7 +15,7 @@
 <%--    <button type="submit">Add</button>--%>
 <%--</form>--%>
 
-<form action="addAlien">
+<form action="addAlien" method="post">
     <label>
         Enter your ID:
         <input type="number" name="id"/>
@@ -30,5 +30,26 @@
     </label>
     <button type="submit">Add</button>
 </form>
+
+<hr>
+
+<form action="getAlien" method="get">
+    <label>
+        Enter your ID:
+        <input type="number" name="id"/>
+    </label>
+    <button type="submit">Get Alien</button>
+</form>
+
+<hr>
+
+<form action="getAlienByName" method="get">
+    <label>
+        Enter Alien Name:
+        <input type="text" name="name"/>
+    </label>
+    <button type="submit">Get Alien By Name</button>
+</form>
+
 </body>
 </html>
